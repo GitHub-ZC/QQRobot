@@ -1,4 +1,4 @@
 module.exports = {
-    account: 1735833182,
-    password: 'IECOXE@root.com',
+    account: 123456789,//qq号
+    password: 'xxxxx',//qq密码
 }
