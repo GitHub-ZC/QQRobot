@@ -116,6 +116,14 @@ client.on("system.login.device", function (e) {
         this.submitSmsCode(String(code).trim());
         this.login();
     })
+});
+
+
+client.on("system.login.slider", function (e) {
+    console.log("输入ticket：")
+    process.stdin.once("data", ticket => {
+        this.submitSlider(String(ticket).trim());
+    })
 }).login(config.password);
 
 //之后还可能会输出设备锁url，需要去网页自行验证，也可监听 `system.login.device` 处理
